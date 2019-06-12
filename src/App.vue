@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <vuex-search-form></vuex-search-form>
-    <vuex-search-list></vuex-search-list>
+    <div class="container my-3">
+      <vuex-search-form></vuex-search-form>
+      <vuex-search-list></vuex-search-list>
+    </div>
   </div>
 </template>
 
