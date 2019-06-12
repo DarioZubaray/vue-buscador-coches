@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <vuex-search></vuex-search>
+    <vuex-search-list></vuex-search-list>
   </div>
 </template>
 
 <script>
-import VuexSerch from './components/VuexSearch'
+import VuexSearchList from './components/VuexSearchList'
 export default {
   name: 'app',
   components: {
-    VuexSearch
+    VuexSearchList
   }
 }
 </script>
