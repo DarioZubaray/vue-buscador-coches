@@ -44,6 +44,12 @@
           </b-form-group>
         </b-col>
       </b-row>
+
+      <b-row>
+        <b-col>
+          <b-button @click.prevent="resetFilter" variant="danger">Reestablecer filtros</b-button>
+        </b-col>
+      </b-row>
     </b-form>
   </div>
 </template>
@@ -131,7 +137,12 @@ export default {
             value
           })
         }
-      },
+      }
+    },
+    methods: {
+      resetFilter() {
+        this.$store.commit('resetFilter')
+      }
     }
 }
 </script>
